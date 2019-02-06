@@ -32,8 +32,8 @@
 
 ## 递归
 
-[] (Climbing Stairs（爬楼梯）)[https://leetcode.com/problems/climbing-stairs/]
+[] [Climbing Stairs（爬楼梯）](https://leetcode.com/problems/climbing-stairs/)
 
 ## 二分查找
 
-[] [Sqrt(x) （x 的平方根）](https://leetcode.com/problems/sqrtx)
+[] [Sqrt(x)（x 的平方根）](https://leetcode.com/problems/sqrtx)
