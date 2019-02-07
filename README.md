@@ -8,21 +8,19 @@
 
 [x] [Majority Element（求众数）](https://leetcode.com/problems/majority-element/)
 
-[] [Missing Positive（求缺失的第一个正数）](https://leetcode.com/problems/first-missing-positive/)
+[x] [Missing Positive（求缺失的第一个正数）](https://leetcode.com/problems/first-missing-positive/)
 
 ## 链表
 
-[] [Linked List Cycle I（环形链表）](https://leetcode.com/problems/linked-list-cycle/)
+[x] [Linked List Cycle I（环形链表）](https://leetcode.com/problems/linked-list-cycle/)
 
-[] [Merge k Sorted Lists（合并 k 个排序链表）](https://leetcode.com/problems/merge-k-sorted-lists/)
+[x] [Merge k Sorted Lists（合并 k 个排序链表）](https://leetcode.com/problems/merge-k-sorted-lists/)
 
 ## 栈
 
-[] [Valid Parentheses（有效的括号）](https://leetcode.com/problems/valid-parentheses/)
+[x] [Valid Parentheses（有效的括号）](https://leetcode.com/problems/valid-parentheses/)
 
-[] [Longest Valid Parentheses（最长有效的括号）](https://leetcode.com/problems/longest-valid-parentheses/)
-
-[] [Evaluate Reverse Polish Notatio（逆波兰表达式求值）](https://leetcode.com/problems/evaluate-reverse-polish-notation/)
+[x] [Longest Valid Parentheses（最长有效的括号）](https://leetcode.com/problems/longest-valid-parentheses/)
 
 ## 队列
 
@@ -32,8 +30,8 @@
 
 ## 递归
 
-[] [Climbing Stairs（爬楼梯）](https://leetcode.com/problems/climbing-stairs/)
+[x] [Climbing Stairs（爬楼梯）](https://leetcode.com/problems/climbing-stairs/)
 
 ## 二分查找
 
-[] [Sqrt(x)（x 的平方根）](https://leetcode.com/problems/sqrtx)
+[x] [Sqrt(x)（x 的平方根）](https://leetcode.com/problems/sqrtx)

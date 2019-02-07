@@ -16,7 +16,7 @@ function threeSum(nums) {
     return [];
   }
 
-  nums.sort((a, b) => { return (a - b) });
+  nums.sort((a, b) => { return (a - b); });
 
   const result = [];
   const result_hash = {};
@@ -50,6 +50,6 @@ function threeSum(nums) {
   });
 
   return result;
-};
+}
 
 console.log(threeSum([-1, 0, 1, 2, -1, -4]));
