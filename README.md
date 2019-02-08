@@ -35,3 +35,11 @@
 ## 二分查找
 
 [x] [Sqrt(x)（x 的平方根）](https://leetcode.com/problems/sqrtx)
+
+## 字符串
+
+[] [Reverse String （反转字符串）](https://leetcode.com/problems/reverse-string/)
+
+[] [Reverse Words in a String（翻转字符串里的单词）](https://leetcode.com/problems/reverse-words-in-a-string/)
+
+[] [String to Integer (atoi)（字符串转换整数 (atoi)）](https://leetcode.com/problems/string-to-integer-atoi/)
