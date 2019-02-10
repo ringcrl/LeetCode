@@ -8,53 +8,53 @@
 
 ## 数组
 
-[x] [Three Sum（求三数之和）](https://leetcode.com/problems/3sum/)
+[x] [Three Sum（求三数之和）](Array/ThreeSum.js)
 
-[x] [Majority Element（求众数）](https://leetcode.com/problems/majority-element/)
+[x] [Majority Element（求众数）](Array/MajorityElement.js)
 
-[x] [Missing Positive（求缺失的第一个正数）](https://leetcode.com/problems/first-missing-positive/)
+[x] [Missing Positive（求缺失的第一个正数）](Array/FirstMissingPositive.js)
 
 ## 链表
 
-[x] [Linked List Cycle I（环形链表）](https://leetcode.com/problems/linked-list-cycle/)
+[x] [Linked List Cycle I（环形链表）](LinkedList/HasCycle.js)
 
-[x] [Merge k Sorted Lists（合并 k 个排序链表）](https://leetcode.com/problems/merge-k-sorted-lists/)
+[x] [Merge k Sorted Lists（合并 k 个排序链表）](LinkedList/MergeKLists.js)
 
 ## 栈
 
-[x] [Valid Parentheses（有效的括号）](https://leetcode.com/problems/valid-parentheses/)
+[x] [Valid Parentheses（有效的括号）](Stack/ValidParentheses.js)
 
-[x] [Longest Valid Parentheses（最长有效的括号）](https://leetcode.com/problems/longest-valid-parentheses/)
+[x] [Longest Valid Parentheses（最长有效的括号）](Stack/LongestValidParentheses.js)
 
 ## 队列
 
-[x] [Design Circular Deque（设计一个双端队列）](https://leetcode.com/problems/design-circular-deque/)
+[x] [Design Circular Deque（设计一个双端队列）](Queue/CircularDeque.js)
 
-[x] [Sliding Window Maximum（滑动窗口最大值）](https://leetcode.com/problems/sliding-window-maximum/)
+[x] [Sliding Window Maximum（滑动窗口最大值）](Queue/SlidingWindowMaximum.js)
 
 ## 递归
 
-[x] [Climbing Stairs（爬楼梯）](https://leetcode.com/problems/climbing-stairs/)
+[x] [Climbing Stairs（爬楼梯）](Recursion/ClimbingStairs.js)
 
 ## 二分查找
 
-[x] [Sqrt(x)（x 的平方根）](https://leetcode.com/problems/sqrtx)
+[x] [Sqrt(x)（x 的平方根）](BinarySearch/Sqrt.js)
 
 ## 字符串
 
-[x] [Reverse String （反转字符串）](https://leetcode.com/problems/reverse-string/)
+[x] [Reverse String （反转字符串）](String/ReverseString.js)
 
-[x] [Reverse Words in a String（翻转字符串里的单词）](https://leetcode.com/problems/reverse-words-in-a-string/)
+[x] [Reverse Words in a String（翻转字符串里的单词）](String/ReverseWords.js)
 
 ## 二叉树
 
-[] [Invert Binary Tree（翻转二叉树）](https://leetcode.com/problems/invert-binary-tree/)
+[x] [Invert Binary Tree（翻转二叉树）](BinaryTree/InvertBinaryTree.js)
 
-[] [Maximum Depth of Binary Tree（二叉树的最大深度）](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+[x] [Maximum Depth of Binary Tree（二叉树的最大深度）](BinaryTree/MaximumDepth.js)
 
-[] [Validate Binary Search Tree（验证二叉查找树）](https://leetcode.com/problems/validate-binary-search-tree/)
+[x] [Validate Binary Search Tree（验证二叉查找树）](BinaryTree/IsValidBST.js)
 
-[] [Path Sum（路径总和）](https://leetcode.com/problems/path-sum/)
+[x] [Path Sum（路径总和）](BinaryTree/HasPathSum.js)
 
 ## 图
 
