@@ -2,6 +2,10 @@
 
 刷题主战场在 CodeWars <https://github.com/ringcrl/CodeWars>，这里进行一些补充。
 
+实时进度：
+
+![](https://static.chenng.cn/api/dynamic_image/leetcode)
+
 ## 数组
 
 [x] [Three Sum（求三数之和）](https://leetcode.com/problems/3sum/)
@@ -24,7 +28,7 @@
 
 ## 队列
 
-[] [Design Circular Deque（设计一个双端队列）](https://leetcode.com/problems/design-circular-deque/)
+[x] [Design Circular Deque（设计一个双端队列）](https://leetcode.com/problems/design-circular-deque/)
 
 [] [Sliding Window Maximum（滑动窗口最大值）](https://leetcode.com/problems/sliding-window-maximum/)
 
@@ -53,3 +57,9 @@
 [] [Validate Binary Search Tree（验证二叉查找树）](https://leetcode.com/problems/validate-binary-search-tree/)
 
 [] [Path Sum（路径总和）](https://leetcode.com/problems/path-sum/)
+
+## 图
+
+[] [Number of Islands（岛屿的个数）](https://leetcode.com/problems/number-of-islands/description/)
+
+[] [Valid Sudoku（有效的数独）](https://leetcode.com/problems/valid-sudoku/)
