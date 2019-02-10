@@ -58,6 +58,4 @@
 
 ## 图
 
-[] [Number of Islands（岛屿的个数）](https://leetcode.com/problems/number-of-islands/description/)
-
-[] [Valid Sudoku（有效的数独）](https://leetcode.com/problems/valid-sudoku/)
+[x] [Number of Islands（岛屿的个数）](Graph/NumberOfIslands.js)
