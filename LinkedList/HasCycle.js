@@ -1,9 +1,10 @@
 /**
  * https://leetcode.com/problems/linked-list-cycle/
  * 
- * 1. 使用两个指针，walker 和 runner
- * 2. walker 一步一步地移动，runner 一次移动两步
- * 3. 如果链表有环则 walker 和 runner 会相遇
+ * 检测链表是否有环
+ * 1. 使用两个指针，slow 和 fast
+ * 2. slow 一步一步地移动，fast 一次移动两步
+ * 3. 如果链表有环则 slow 和 fast 会相遇
  * 
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -17,15 +18,15 @@
  * @return {boolean}
  */
 function hasCycle(head) {
-  if (head === null) { return false; }
+  if (head === null || head.next === null) { return false; }
 
-  let walker = head;
-  let runner = head;
+  let slow = head;
+  let fast = head;
 
-  while (runner.next !== null && runner.next.next !== null) {
-    walker = walker.next;
-    runner = runner.next.next;
-    if (walker === runner) { return true; }
+  while (fast.next !== null && fast.next.next !== null) {
+    slow = slow.next;
+    fast = fast.next.next;
+    if (slow === fast) { return true; }
   }
 
   return false;

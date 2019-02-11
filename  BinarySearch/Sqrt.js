@@ -1,7 +1,7 @@
 /**
  * https://leetcode.com/problems/sqrtx/
  * 
- * 
+ * x 的平方根
  * 1. 使用二分查找法实现.
  * 2. 范围是 1 ~ x/2
  * 

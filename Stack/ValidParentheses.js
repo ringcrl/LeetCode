@@ -1,6 +1,8 @@
 /**
  * https://leetcode.com/problems/valid-parentheses/
  * 
+ * 有效的括号
+ * 
  * @param {string} s
  * @return {boolean}
  */

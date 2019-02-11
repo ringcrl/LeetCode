@@ -1,11 +1,4 @@
 /**
- * Definition for a binary tree node.
- * function TreeNode(val) {
- *     this.val = val;
- *     this.left = this.right = null;
- * }
- */
-/**
  * https://leetcode.com/problems/validate-binary-search-tree/submissions/
  * 
  * 验证是否是二叉树搜索树
@@ -14,6 +7,13 @@
  * 3. 如果右子树存在小于 node.val 则不是
  * 4. 递归
  * 
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */
+/**
  * @param {TreeNode} root
  * @return {boolean}
  */

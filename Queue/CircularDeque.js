@@ -1,6 +1,7 @@
 /**
  * https://leetcode.com/problems/design-circular-deque/
  * 
+ * 设计一个双端队列
  * 1. 使用变量 size 记录大小，使用 [] 来存储数据
  * 2. 添加与删除注意边界条件的判断，先判断再操作
  * 

@@ -1,13 +1,18 @@
 /**
  * https://leetcode.com/problems/merge-k-sorted-lists/
  * 
+ * 合并 k 个排序链表
+ * 
  * Definition for singly-linked list.
  * function ListNode(val) {
  *     this.val = val;
  *     this.next = null;
  * }
  */
-
+/**
+ * @param {ListNode[]} lists
+ * @return {ListNode}
+ */
 const mergeKLists = (lists, low = 0, height = lists.length - 1) => {
   if (lists.length === 0) {
     return null;

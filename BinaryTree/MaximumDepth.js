@@ -1,4 +1,10 @@
 /**
+ * https://leetcode.com/problems/maximum-depth-of-binary-tree/
+ * 
+ * 求二叉树最大深度
+ * 1. 判断边界条件
+ * 2. 左子树的最大高度或右子树的最大高度 + 1
+ * 
  * Definition for a binary tree node.
  * function TreeNode(val) {
  *     this.val = val;
@@ -7,12 +13,6 @@
  */
 
 /**
- * https://leetcode.com/problems/maximum-depth-of-binary-tree/
- * 
- * 求二叉树最大深度
- * 1. 判断边界条件
- * 2. 左子树的最大高度或右子树的最大高度 + 1
- * 
  * @param {TreeNode} root
  * @return {number}
  */

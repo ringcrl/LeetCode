@@ -1,6 +1,11 @@
 /**
  * https://leetcode.com/problems/sliding-window-maximum/
  * 
+ * 滑动窗口最大值
+ * 1. 使用 Monotonic queue，time O(n)，space O(k)
+ * 2. 来了个队列最大值就把队列清空
+ * 3. Monotonic queue 的结果就是最后结果
+ * 
  * https://www.youtube.com/watch?v=2SXqBsTR6a8
  * Monotonic queue   max
  *  [ 1 ]              -
@@ -11,10 +16,6 @@
  *  [ 5, 3 ]           5
  *  [ 6 ]              6
  *  [ 7 ]              7
- * 
- * 1. 使用 Monotonic queue，time O(n)，space O(k)
- * 2. 来了个队列最大值就把队列清空
- * 3. Monotonic queue 的结果就是最后结果
  * 
  * @param {number[]} nums
  * @param {number} k

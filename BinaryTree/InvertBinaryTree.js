@@ -1,4 +1,10 @@
 /**
+ * https://leetcode.com/problems/invert-binary-tree/
+ * 
+ * 反转二叉树
+ * 1. 边界条件判断
+ * 2. 左右节点分别等于递归后的右左节点
+ * 
  * Definition for a binary tree node.
  * function TreeNode(val) {
  *     this.val = val;
@@ -7,12 +13,6 @@
  */
 
 /**
- * https://leetcode.com/problems/invert-binary-tree/
- * 
- * 反转二叉树
- * 1. 边界条件判断
- * 2. 左右节点分别等于递归后的右左节点
- * 
  * @param {TreeNode} root
  * @return {TreeNode}
  */

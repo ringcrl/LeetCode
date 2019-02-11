@@ -1,6 +1,8 @@
 /**
  * https://leetcode.com/problems/climbing-stairs/
  * 
+ * 爬楼梯问题
+ * 
  * @param {number} n
  * @return {number}
  */

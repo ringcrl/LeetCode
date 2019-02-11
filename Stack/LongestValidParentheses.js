@@ -1,5 +1,8 @@
 /**
  * https://leetcode.com/problems/longest-valid-parentheses/
+ * 
+ * 有效的最长括号
+ * 
  * @param {string} s
  * @return {number}
  */

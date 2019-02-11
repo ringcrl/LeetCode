@@ -1,11 +1,4 @@
 /**
- * Definition for a binary tree node.
- * function TreeNode(val) {
- *     this.val = val;
- *     this.left = this.right = null;
- * }
- */
-/**
  * https://leetcode.com/problems/path-sum/submissions/
  * 
  * 二叉树是否有和为 sum 的 path
@@ -14,6 +7,13 @@
  * 3. sum - root.val 为 newSum
  * 4. 寻找左子树或者右子树
  * 
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */
+/**
  * @param {TreeNode} root
  * @param {number} sum
  * @return {boolean}
