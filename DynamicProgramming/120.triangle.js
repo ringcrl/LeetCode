@@ -36,8 +36,10 @@
 /**
  * 三角形最小路径和
    1. 定义状态 dp[i][j] : 从底部到 triangel[i][j] 的路径的最小值
-   2. 转移方程式: dp[i][j] = triangle[i][j] + Math.min(dp[i + 1][j], dp[i + 1][j + 1]);
-   3. 定义初始化的值: dp[rowMax][j] = triangle[rowMax][j]
+   2. 转移方程式（左下的点与右下的点的最小值加上自身的值）: dp[i][j] = triangle[i][j] + Math.min(dp[i + 1][j], dp[i + 1][j + 1]);
+   3. 定义 dp 初始值: dp[rowMax][j] = triangle[rowMax][j]
+   4. 往上递推，最后推到 dp[0][0] 就是答案
+   5. 时间复杂度O(row x col)
  * 
  * @param {number[][]} triangle
  * @return {number}
