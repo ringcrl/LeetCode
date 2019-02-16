@@ -4,7 +4,7 @@
 
 刷题插件：[vscode-leetcode](https://github.com/jdneo/vscode-leetcode)
 
-# 实时进度：
+# 实时进度
 
 ![](https://static.chenng.cn/api/dynamic_image/leetcode)
 
