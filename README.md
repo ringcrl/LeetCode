@@ -1,6 +1,6 @@
-# LeetCode 刷题记录
+# LeetCode
 
-另一个刷题战场 CodeWars：<https://github.com/ringcrl/CodeWars>
+另一个刷题战场：[CodeWars](https://github.com/ringcrl/CodeWars)
 
 刷题插件：[vscode-leetcode](https://github.com/jdneo/vscode-leetcode)
 
