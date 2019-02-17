@@ -33,9 +33,49 @@
  * 
  */
 /**
+ *   0   1
+ * 
+ *       d
+ *   a   e
+ *       f
+ * 
+ *       d
+ *   b   e
+ *       f
+ *       
+ *       d
+ *   c   e
+ *       f
+ * 
+ * 1. 使用一个 prefix 记录已经进入的层次
+ * 2. 在 dfs 之前 push、dfs 之后 pop
+ * 3. 在 base cast 的时候讲结果 push 进 res
+ * 
  * @param {string} digits
  * @return {string[]}
  */
-var letterCombinations = function(digits) {
+const letterCombinations = function(digits) {
+  const wordMap = ['0', '1', 'abc', 'def', 'ghi', 'jkl', 'mno', 'pqrs', 'tuv', 'wxyz'];
+  const res = [];
+  const prefix = [];
+  
+  if (digits.length) {
+    dfsHelper(0);
+  }
+  return res;
+
+  function dfsHelper(index) {
+    // base case
+    if (index === digits.length) {
+      return res.push(prefix.join(''));
+    }
     
+    const str = wordMap[Number(digits[index])];
+    for (let i = 0; i < str.length; i++) {
+      prefix.push(str[i]);
+      dfsHelper(index + 1);
+      prefix.pop();
+    }
+  }
 };
+
