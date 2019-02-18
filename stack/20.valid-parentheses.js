@@ -60,15 +60,20 @@
  * 
  */
 /**
+ * 有效的括号
+ * 1. 处理 0、1 的边界条件
+ * 2. 定义反向的 map
+ * 3. 如果是正向的括号，推入
+ * 4. 如果是反向的括号，看栈顶元素是否匹配，匹配推出，不匹配推入
  * @param {string} s
  * @return {boolean}
  */
 function isValid(s) {
-  const arr = s.split('');
+  if (s === '') { return true; }
 
-  if (arr.length === 1) {
-    return false;
-  }
+  if (s.length === 1) { return false; }
+
+  const arr = s.split('');
 
   const stack = [];
   const pairMap = {
@@ -77,23 +82,23 @@ function isValid(s) {
     ']': '[',
   };
 
-  arr.forEach(item => {
-    if (
-      !pairMap[item] ||
-      stack[stack.length - 1] !== pairMap[item]
-    ) {
-      stack.push(item);
-      return;
+  for (let i = 0; i < arr.length; i++) {
+    const curr = arr[i];
+    if (!pairMap[curr]) {
+      stack.push(curr);
+      continue;
     }
 
-    if (stack[stack.length - 1] === pairMap[item]) {
+    if (pairMap[curr] === stack[stack.length - 1]) {
       stack.pop();
+    } else { // 如果当前元素和最后一个元素不匹配，继续推
+      stack.push(curr);
     }
-  });
-
-  if (stack.length === 0) {
-    return true;
   }
 
-  return false;
+  if (stack.length !== 0) {
+    return false;
+  }
+
+  return true;
 }
