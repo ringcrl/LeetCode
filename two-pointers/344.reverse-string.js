@@ -45,23 +45,17 @@
  * 反转字符串
  * 1. 设定首尾指针 start，end
  * 2. 不断交换首尾元素，start++，end--
- * 
  * @param {character[]} s
  * @return {void} Do not return anything, modify s in-place instead.
  */
-function reverseString(s) {
+const reverseString = function(s) {
   const swap = (arr, i, j) => {
-    [arr[i], arr[j]] = [arr[j], arr[i]];
+    [[arr[i]], arr[j]] = [arr[j], arr[i]];
   };
 
-  let start = 0;
-  let end = s.length - 1;
-
-  while (start < end) {
-    swap(s, start, end);
-    start++;
-    end--;
+  let left = 0;
+  let right = s.length - 1;
+  while (left < right) {
+    swap(s, left++, right--);
   }
-
-  return s;
-}
+};
