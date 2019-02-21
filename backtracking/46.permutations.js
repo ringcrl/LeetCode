@@ -31,26 +31,30 @@
  */
 /**
  * backtracking 类型的题目
- * 1. 要注意递归前后的状态
- * 2. 找到终止条件
+ * 1. backtracking 题目一般要定义 helper 函数改 res
+ * 2. helper 找到终止条件
+ * 3. list 在 backtracking 前后 push 和 pop 内容，保证下一次循环为 []
  * @param {number[]} nums
  * @return {number[][]}
  */
 const permute = function(nums) {
-  const res = [];
-  if (nums === null || nums.length === 0) { return res; }
+  if (nums === null || nums.length === 0) { return nums; }
 
+  const res = [];
+  
   helper(res, []);
 
   return res;
 
   function helper(res, list) {
-    // base cast
+    // 找到终止条件
     if (list.length === nums.length) {
       res.push(list.slice());
       return;
     }
+
     for (let i = 0; i < nums.length; i++) {
+      // 不需要再加入自身
       if (list.includes(nums[i])) { continue; }
       list.push(nums[i]);
       helper(res, list);
