@@ -68,5 +68,3 @@ const isSubsequence = function(s, t) {
   }
   return true;
 };
-
-console.log(isSubsequence('axc', 'ahbgdc'));

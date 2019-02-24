@@ -34,6 +34,9 @@
  * 
  */
 /**
+ * 数组的所有子集，包括自身和 []
+ * 1. 定义 helper，需要长度、index he list
+ * 2. list 的长度为需要的长度的时候，推入结果，注意 slice 一份
  * @param {number[]} nums
  * @return {number[][]}
  */

@@ -51,10 +51,10 @@
 function firstMissingPositive (nums) {
   if (nums.length === 0) { return 1; }
 
-  let flag = 1;
-  while (nums.indexOf(flag) !== -1) {
-    flag++;
+  let curr = 1;
+  while (nums.indexOf(curr) !== -1) {
+    curr++;
   }
 
-  return flag;
+  return curr;
 }

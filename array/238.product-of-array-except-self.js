@@ -45,12 +45,9 @@ const productExceptSelf = function (nums) {
     res[i] = rightMult;
     rightMult *= nums[i];
   }
-  console.log(JSON.stringify(res));
-  for (let j = 0; j < nums.length; j++) {
-    res[j] *= leftMult;
-    leftMult *= nums[j];
+  for (let i = 0; i < nums.length; i++) {
+    res[i] *= leftMult;
+    leftMult *= nums[i];
   }
-  console.log(JSON.stringify(res));
   return res;
 };
-productExceptSelf([1,2,3,4]);

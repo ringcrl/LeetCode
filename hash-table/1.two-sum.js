@@ -31,22 +31,23 @@
  */
 /**
  * 
- * 两数之和
- * 1. 使用表结构，看当前值的匹配值是否在表中
+ * 数组中两数之和为 target
+ * 1. 一次循环
+ * 2. 如果 target - nums[i] 为 undefined，则记录结果到 hash
+ * 3. 如果找到对应的值，则返回两个值的索引
  * 
  * @param {number[]} nums
  * @param {number} target
  * @return {number[]}
  */
 const twoSum = function (nums, target) {
-  const dict = {};
+  const hash = {};
 
   for (let i = 0; i < nums.length; i++) {
-    const num = nums[i];
-    if (dict[target - num] !== undefined) {
-      return [dict[target - num], i];
+    if (hash[target - nums[i]] === undefined) {
+      hash[nums[i]] = i;
     } else {
-      dict[num] = i;
+      return [hash[target - nums[i]], i];      
     }
   }
   

@@ -32,8 +32,10 @@
 /**
  * backtracking 题目
  * 1. time：O(n!)
- * 2. 卡特兰数
- * 3. 左右的初始值都是 n
+ * 2. 左右的初始值都是 n
+ * 3. left - 1，string + '('
+ * 4. right - 1, string + ')'
+ * 5. 在终止条件的时候 res 加入结果
  * @param {number} n
  * @return {string[]}
  */

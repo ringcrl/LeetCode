@@ -35,6 +35,9 @@
  * }
  */
 /**
+ * 合并 K 的有序链表
+ * 1. mergeKLists
+ * 2. mergeTwoLists
  * @param {ListNode[]} lists
  * @return {ListNode}
  */

@@ -44,9 +44,9 @@
  * 
  */
 /**
- * 切割一部分的数组
- * 1. array.unshift 多参数传递
- * 2. splice 与 k 的判断
+ * 从 index 为 k 开始翻转数组
+ * 1. splice 的 index 取值
+ * 2. array.unshift 多参数传递，最后的结果和入参顺序一致
  * @param {number[]} nums
  * @param {number} k
  * @return {void} Do not return anything, modify nums in-place instead.

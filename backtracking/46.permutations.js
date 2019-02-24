@@ -30,9 +30,9 @@
  * 
  */
 /**
- * backtracking 类型的题目
+ * 数组的所有排序结果
  * 1. backtracking 题目一般要定义 helper 函数改 res
- * 2. helper 找到终止条件
+ * 2. helper 找到终止条件，推入的结果要做一次拷贝，防止后面被引用
  * 3. list 在 backtracking 前后 push 和 pop 内容，保证下一次循环为 []
  * @param {number[]} nums
  * @return {number[][]}

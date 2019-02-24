@@ -40,16 +40,16 @@
  * @return {number}
  */
 function majorityElement(nums) {
-  const list = [];
+  const hash = {};
   for (let i = 0; i < nums.length; i++) {
-    const num = nums[i];
-    if (list[num] === undefined) {
-      list[num] = 1;
-    } else {
-      list[num]++;
-    }
-    if (list[num] > nums.length / 2) {
-      return num;
+    const curr = nums[i];
+
+    hash[curr] = hash[curr] === undefined ?
+      1 :
+      hash[curr] + 1;
+
+    if (hash[curr] > nums.length / 2) {
+      return curr;
     }
   }
   return null;

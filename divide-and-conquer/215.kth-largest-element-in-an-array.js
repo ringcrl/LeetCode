@@ -37,8 +37,26 @@
  * @param {number} k
  * @return {number}
  */
-const findKthLargest = function(nums, k) {
-  nums.sort((a, b) => b - a);
-  
-  return nums[k - 1];
+const findKthLargest = function (nums, k, start = 0, end = nums.length - 1) {
+  const pivot = nums[start + Math.floor((end - start) / 2)];
+  let l = start;
+  let r = end;
+  // move values >= pivot to the left, values <= pivot to the right
+  while (l <= r) {
+    while (l <= r && nums[l] > pivot) l++;
+    while (l <= r && nums[r] < pivot) r--;
+    if (l <= r) {
+      const temp = nums[l];
+      nums[l] = nums[r];
+      nums[r] = temp;
+      l++;
+      r--;
+    }
+  }
+
+  // check if kth largest element is in the left part
+  if (start + k - 1 <= r) return findKthLargest(nums, k, start, r);
+  // otherwise, check if kth largest element is in the right part
+  if (start + k - 1 >= l) return findKthLargest(nums, k - l + start, l, end);
+  return nums[r + 1];
 };

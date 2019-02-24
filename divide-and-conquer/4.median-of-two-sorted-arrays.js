@@ -86,5 +86,3 @@ const findMedianSortedArrays = function(nums1, nums2) {
 
   return totalLen % 2 === 0 ? (last + curr) / 2 : curr;
 };
-
-console.log(findMedianSortedArrays([1, 2], [3, 4]));
