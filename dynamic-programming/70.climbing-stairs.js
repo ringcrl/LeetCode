@@ -41,9 +41,39 @@
  * 
  */
 /**
+ * 爬楼梯
+ * - dp 方法求解
+ * - 定义 allWays、twoStepBefore、oneStepBefore
+ * - 分别处理三个变量
  * @param {number} n
  * @return {number}
  */
 function climbStairs(n) {
-  
+  if (n <= 2) { return n; }
+
+  let allWays = 0;
+  let twoStepBefore = 1;
+  let oneStepBefore = 2;
+
+  for (let i = 2; i < n; i++) {
+    allWays = oneStepBefore + twoStepBefore;
+    twoStepBefore = oneStepBefore;
+    oneStepBefore = allWays;
+  }
+
+  return allWays;
 }
+
+// 递归写法存在大量重复计算
+// const map = new Map();
+// function climbStairs(n) {
+//   if (n <= 2) {
+//     return n;
+//   }
+
+//   if (map.has(n)) { return map.get(n); }
+
+//   const stairs = climbStairs(n - 1) + climbStairs(n - 2);
+//   map.set(n, stairs);
+//   return stairs;
+// }
