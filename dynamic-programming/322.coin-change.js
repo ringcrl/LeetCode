@@ -56,3 +56,40 @@ const coinChange = function (coins, amount) {
   }
   return dp[amount] === Number.MAX_SAFE_INTEGER ? -1 : dp[amount];
 };
+
+/**
+ * 零钱兑换
+ * 1. 递归版本，无法通过测试，但是思路简单
+ * 2. 使用 hepler 方法，每次深入的时候传入剩余值和 list
+ * 3. 穷举出所有可能的结果，返回最短的结果
+ * 
+ * @param {number[]} coins
+ * @param {number} amount
+ * @return {number}
+ */
+const coinChange = function (coins, amount) {
+  const res = [];
+  hepler(amount, []);
+  return res.reduce((prev, curr) => {
+    return Math.min(curr.length, prev);
+  }, Number.MAX_SAFE_INTEGER);
+
+
+  function hepler(amount, list) {
+    if (amount === 0) {
+      res.push(list.slice());
+      return;
+    }
+
+    if (amount < 0) {
+      return;
+    }
+    
+    for (let i = 0; i < coins.length; i++) {
+      const coin = coins[i];
+      const newList = list.slice();
+      newList.push(coin);
+      hepler(amount - coin, newList);
+    }
+  }
+};
