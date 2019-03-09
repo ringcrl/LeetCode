@@ -1,0 +1,19 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "build": "node helper.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ringcrl/LeetCode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ringcrl/LeetCode/issues"
+  },
+  "homepage": "https://github.com/ringcrl/LeetCode#readme"
+}
