@@ -4,7 +4,7 @@
   "description": "",
   "main": ".eslintrc.js",
   "scripts": {
-    "build": "node helper.js"
+    "build": "node helper.js && yarn doctoc ./README.md"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ringcrl/LeetCode/issues"
   },
-  "homepage": "https://github.com/ringcrl/LeetCode#readme"
+  "homepage": "https://github.com/ringcrl/LeetCode#readme",
+  "dependencies": {
+    "doctoc": "^1.4.0"
+  }
 }

@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 
+const excludes = require('./excludes');
 const filePath = path.resolve(__dirname);
 const distPath = path.resolve(__dirname, 'README.md');
 
@@ -21,6 +22,9 @@ docsify 阅读：[https://static.chenng.cn](https://static.chenng.cn/#/%E7%AE%97
 ![](https://static.chenng.cn/api/dynamic_image/leetcode)
 
 # 已刷题目
+
+<!-- START doctoc -->
+<!-- END doctoc -->
 
 `;
 
@@ -44,17 +48,7 @@ function readAllFiles(filePath, cb) {
   //根据文件路径读取文件，返回文件列表
   const files = fs.readdirSync(filePath);
   files.forEach((filename) => {
-    const exclude = [
-      '.lib',
-      '.git',
-      '.DS_Store',
-      '.vscode',
-      '.eslintrc.js',
-      'helper.js',
-      'package.json',
-      'README.md',
-    ];
-    if (exclude.includes(filename)) {
+    if (excludes.includes(filename)) {
       return;
     }
     // 获取当前文件的绝对路径
