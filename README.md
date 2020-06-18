@@ -10,7 +10,7 @@ docsify 阅读：[https://static.chenng.cn](https://static.chenng.cn/#/%E7%AE%97
 
 # 实时进度
 
-![](https://static.chenng.cn/api/dynamic_image/leetcode)
+https://leetcode-badge.chyroc.cn/?name=ringcrl&leetcode_badge_style=Accepted/Total-{{.accepted_submission}}/{{.all_submission}}-green.svg
 
 # 已刷题目
 
